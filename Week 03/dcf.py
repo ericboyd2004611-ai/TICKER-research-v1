@@ -7,20 +7,147 @@ import sys
 # ==============================================================================
 # INPUTS (Edit these values by hand)
 # ==============================================================================
-STARTING_FCFF = 100.0        # Free cash flow to firm in base year (USD millions)
+STARTING_FCFF = -460.118     # SMR 2025 FCFF: CFO + after-tax interest - capex (USD millions)
 GROWTH_RATES = [
-    0.08,                     # Year 1 growth rate (decimal)
-    0.06,                     # Year 2 growth rate (decimal)
-    0.05,                     # Year 3 growth rate (decimal)
-    0.04,                     # Year 4 growth rate (decimal)
-    0.03,                     # Year 5 growth rate (decimal)
+    0.08,                     # PLACEHOLDER: unresolved; training value retained
+    0.06,                     # PLACEHOLDER: unresolved; training value retained
+    0.05,                     # PLACEHOLDER: unresolved; training value retained
+    0.04,                     # PLACEHOLDER: unresolved; training value retained
+    0.03,                     # PLACEHOLDER: unresolved; training value retained
 ]
-WACC = 0.10                  # Weighted Average Cost of Capital (decimal)
-TERMINAL_GROWTH = 0.03       # Long-run terminal growth rate (decimal)
-NON_OPERATING_CASH = 50.0    # Cash and short-term liquid investments (USD millions)
-DEBT = 300.0                 # Total debt and debt-like claims (USD millions)
-DILUTED_SHARES = 50.0        # Diluted common shares count (millions of shares)
+WACC = 0.10                  # PLACEHOLDER: unresolved; training value retained
+TERMINAL_GROWTH = 0.03       # Forecast: long-run nominal economic growth (decimal)
+NON_OPERATING_CASH = 836.417 # Cash and cash equivalents at 2025-12-31 (USD millions)
+DEBT = 0.0                   # SMR reported no debt at 2025-12-31 (USD millions)
+DILUTED_SHARES = 163.731673  # 2025 diluted weighted-average Class A shares (millions)
 # ==============================================================================
+
+# Sensitivity and reverse-DCF controls (edit these values by hand)
+SENSITIVITY_WACCS = [0.09, 0.10, 0.11]
+SENSITIVITY_TERMINAL_GROWTH_RATES = [0.02, 0.03, 0.04]
+TARGET_SHARE_PRICE = 10.81
+REVERSE_SHIFT_LOWER = -0.05  # -5 percentage points
+REVERSE_SHIFT_UPPER = 0.10   # +10 percentage points
+
+
+def calculate_dcf(growth_rates, wacc, terminal_growth):
+    """Return the DCF components without printing them."""
+    fcff_years = []
+    current_fcff = STARTING_FCFF
+    for growth_rate in growth_rates:
+        current_fcff = current_fcff * (1.0 + growth_rate)
+        fcff_years.append(current_fcff)
+
+    pv_explicit = sum(
+        cash_flow / ((1.0 + wacc) ** (year + 1))
+        for year, cash_flow in enumerate(fcff_years)
+    )
+    terminal_value = (
+        fcff_years[-1]
+        * (1.0 + terminal_growth)
+        / (wacc - terminal_growth)
+    )
+    pv_terminal_value = terminal_value / ((1.0 + wacc) ** 5)
+    enterprise_value = pv_explicit + pv_terminal_value
+    equity_value = enterprise_value + NON_OPERATING_CASH - DEBT
+    value_per_share = equity_value / DILUTED_SHARES
+
+    return {
+        "fcff_years": fcff_years,
+        "pv_explicit": pv_explicit,
+        "terminal_value": terminal_value,
+        "pv_terminal_value": pv_terminal_value,
+        "enterprise_value": enterprise_value,
+        "equity_value": equity_value,
+        "value_per_share": value_per_share,
+    }
+
+
+def print_sensitivity_grid():
+    """Print value per share for each valid WACC/terminal-growth pair."""
+    print("\nSensitivity grid — value per diluted share ($)")
+    first_column_width = 8
+    value_column_width = 12
+    header = "WACC \\ g".ljust(first_column_width)
+    header += "".join(
+        f"{terminal_growth:.0%}".rjust(value_column_width)
+        for terminal_growth in SENSITIVITY_TERMINAL_GROWTH_RATES
+    )
+    print(header)
+
+    for wacc in SENSITIVITY_WACCS:
+        row = f"{wacc:.0%}".ljust(first_column_width)
+        for terminal_growth in SENSITIVITY_TERMINAL_GROWTH_RATES:
+            if terminal_growth >= wacc:
+                cell = "invalid"
+            else:
+                result = calculate_dcf(GROWTH_RATES, wacc, terminal_growth)
+                cell = f"{result['value_per_share']:.2f}"
+            row += cell.rjust(value_column_width)
+        print(row)
+
+
+def shifted_value_per_share(shift):
+    """Value per share after adding a uniform shift to all explicit growth rates."""
+    shifted_growth_rates = [growth_rate + shift for growth_rate in GROWTH_RATES]
+    if any(growth_rate <= -1.0 for growth_rate in shifted_growth_rates):
+        raise ValueError("A shifted annual growth rate is -100% or below.")
+    return calculate_dcf(shifted_growth_rates, WACC, TERMINAL_GROWTH)[
+        "value_per_share"
+    ]
+
+
+def print_reverse_dcf():
+    """Solve for a uniform explicit-growth shift using bounded bisection."""
+    print("\nReverse DCF — uniform shift to all five explicit growth rates")
+    print(f"Target share price: ${TARGET_SHARE_PRICE:.4f}")
+    print(
+        "Held fixed: starting FCFF, WACC, terminal growth, "
+        "non-operating cash, debt, and diluted shares"
+    )
+    print(
+        "Bracket: "
+        f"{REVERSE_SHIFT_LOWER:+.2%} to {REVERSE_SHIFT_UPPER:+.2%}"
+    )
+
+    shifted_at_lower = [g + REVERSE_SHIFT_LOWER for g in GROWTH_RATES]
+    shifted_at_upper = [g + REVERSE_SHIFT_UPPER for g in GROWTH_RATES]
+    if any(g <= -1.0 for g in shifted_at_lower + shifted_at_upper):
+        print("Solved shift: no solution — bracket creates growth of -100% or below")
+        return
+
+    lower = REVERSE_SHIFT_LOWER
+    upper = REVERSE_SHIFT_UPPER
+    lower_difference = shifted_value_per_share(lower) - TARGET_SHARE_PRICE
+    upper_difference = shifted_value_per_share(upper) - TARGET_SHARE_PRICE
+
+    if lower_difference == 0.0:
+        solved_shift = lower
+    elif upper_difference == 0.0:
+        solved_shift = upper
+    elif lower_difference * upper_difference > 0.0:
+        print("Solved shift: no solution in the stated bracket")
+        return
+    else:
+        for _ in range(100):
+            midpoint = (lower + upper) / 2.0
+            midpoint_difference = (
+                shifted_value_per_share(midpoint) - TARGET_SHARE_PRICE
+            )
+            if abs(midpoint_difference) < 1e-10:
+                lower = midpoint
+                upper = midpoint
+                break
+            if lower_difference * midpoint_difference <= 0.0:
+                upper = midpoint
+            else:
+                lower = midpoint
+                lower_difference = midpoint_difference
+        solved_shift = (lower + upper) / 2.0
+
+    solved_value = shifted_value_per_share(solved_shift)
+    print(f"Solved shift: {solved_shift:+.4%}")
+    print(f"Solved value per diluted share: ${solved_value:.4f}")
 
 
 def run_dcf():
@@ -35,31 +162,14 @@ def run_dcf():
     if DILUTED_SHARES <= 0:
         sys.exit("Error: Diluted common shares must be positive.")
 
-    # 1. Project explicit FCFF for Years 1 through 5
-    fcff_years = []
-    current_fcff = STARTING_FCFF
-    for g in GROWTH_RATES:
-        current_fcff = current_fcff * (1.0 + g)
-        fcff_years.append(current_fcff)
-
-    # 2. Discount explicit FCFF to present value
-    pv_explicit = sum(cf / ((1.0 + WACC) ** (i + 1)) for i, cf in enumerate(fcff_years))
-
-    # 3. Terminal value at the end of Year 5 (Gordon Growth Model)
-    # TV_5 = FCFF_5 * (1 + g) / (WACC - g)
-    tv_5 = fcff_years[-1] * (1.0 + TERMINAL_GROWTH) / (WACC - TERMINAL_GROWTH)
-
-    # 4. Present value of terminal value (discounted 5 years back to Year 0)
-    pv_tv = tv_5 / ((1.0 + WACC) ** 5)
-
-    # 5. Enterprise value = sum of PV of explicit cash flows + PV of terminal value
-    enterprise_value = pv_explicit + pv_tv
-
-    # 6. Equity value = Enterprise value + non-operating cash - debt
-    equity_value = enterprise_value + NON_OPERATING_CASH - DEBT
-
-    # 7. Per-share value = Equity value / diluted shares
-    value_per_share = equity_value / DILUTED_SHARES
+    result = calculate_dcf(GROWTH_RATES, WACC, TERMINAL_GROWTH)
+    fcff_years = result["fcff_years"]
+    pv_explicit = result["pv_explicit"]
+    tv_5 = result["terminal_value"]
+    pv_tv = result["pv_terminal_value"]
+    enterprise_value = result["enterprise_value"]
+    equity_value = result["equity_value"]
+    value_per_share = result["value_per_share"]
 
     # 8. Terminal value share of enterprise value
     tv_share = pv_tv / enterprise_value if enterprise_value != 0 else 0.0
@@ -77,6 +187,8 @@ def run_dcf():
     print(f"Equity value: {equity_value:.4f}")
     print(f"Value per diluted share: {value_per_share:.4f}")
     print(f"PV of terminal value as share of EV: {tv_share:.4f}")
+    print_sensitivity_grid()
+    print_reverse_dcf()
 
 
 if __name__ == "__main__":
