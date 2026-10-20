@@ -1,6 +1,6 @@
 {
   "label": "AI-generated local review package; course submission incomplete",
-  "created_utc": "2026-10-20T01:01:48.591683+00:00",
+  "created_utc": "2026-10-20T01:03:56.962111+00:00",
   "files": [
     {
       "path": ".gitignore",
@@ -230,7 +230,7 @@
     {
       "path": "evidence/pre-recording-checks.json",
       "bytes": 1084,
-      "sha256": "b42c6c33c8d74ad1a1eb24091c436fcc262d99dd916f81d50672a6e203c008fa"
+      "sha256": "a4a69bd0a9f28f568d816d4b660fd5a67bc8e60303ce2a81b2e0fa0340f23ae3"
     },
     {
       "path": "evidence/recording-snapshot.json",
@@ -239,8 +239,8 @@
     },
     {
       "path": "evidence/repository-status.json",
-      "bytes": 344,
-      "sha256": "12e47931bf46679ec85186309f4a6b519a5e7f422e23377c8a1db7e10e614edb"
+      "bytes": 424,
+      "sha256": "d8e72a688181fa11cf4a044e4c7131010c86a35e267fa164a3bd0ecdc47425af"
     },
     {
       "path": "evidence/superseded-first-scenario-draft/commercialization-output.json",
@@ -369,13 +369,13 @@
     },
     {
       "path": "submission/submission-manifest.csv",
-      "bytes": 2506,
-      "sha256": "c6c6513f4a754053b397aa86fdcded0195484117147361c908304ec61e07da06"
+      "bytes": 2623,
+      "sha256": "27492d2cc69db52d06f0d56aaa1f94e9a617695904e8e7aecd36523d520755f6"
     },
     {
       "path": "submission-manifest.csv",
-      "bytes": 2506,
-      "sha256": "c6c6513f4a754053b397aa86fdcded0195484117147361c908304ec61e07da06"
+      "bytes": 2623,
+      "sha256": "27492d2cc69db52d06f0d56aaa1f94e9a617695904e8e7aecd36523d520755f6"
     },
     {
       "path": "tests/test_application.py",

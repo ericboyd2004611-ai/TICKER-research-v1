@@ -2,8 +2,9 @@
   "repository": "ericboyd2004611-ai/TICKER-research-v1",
   "branch": "project-1-smr-submission",
   "project_url": "https://github.com/ericboyd2004611-ai/TICKER-research-v1/tree/project-1-smr-submission/Project%201",
-  "published": false,
-  "source_commit": "",
+  "published": true,
+  "source_commit": "fd0291ffc7c5c393684d1d7a7cccc4d086e0f576",
   "instructional_team_access": "not verified",
-  "main_branch_modified": false
+  "main_branch_modified": false,
+  "remote_source_commit_verified": true
 }
