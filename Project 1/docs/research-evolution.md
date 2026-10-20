@@ -152,28 +152,28 @@ Proposed watch/defer for an investment committee with no position. The student
 originally described a high-risk-tolerance, long-horizon analyst. No approved buy
 recommendation is inferred from unverified assumptions or omitted residual value.
 
-## A-to-B reconciliation proposal
+## A-to-B reconciliation
 
 | Item | Earlier supplied material | Current draft | Driver and evidence |
 |---|---|---|---|
-| Thesis | Watch/defer | Provisionally unchanged | Student initial view plus AI-assisted contract and model review |
-| Evidence date | December 2025 with later disclosures | September 1 close, dated observations | AI identified look-ahead risk; source ledger |
+| Thesis | Watch/defer | Provisionally unchanged | Original thesis; subsequent contract and model review |
+| Evidence date | December 2025 with later disclosures | September 1 close, dated observations | Look-ahead correction; source ledger |
 | Shares | Historical EPS denominator distinguished from forward shares | Dated interests plus gross-award proxy | Model/source reconciliation; final ownership audit open |
-| Commercial economics | Contracts, funding and margins unresolved | Explicit assumed prices, margins, delivery and fee schedules | AI implementation; data/commercialization-scenarios.json |
-| Downside | Services-only wind-down case | Separate old-date case plus new margin/cash stresses | Existing coursework plus AI-generated tests |
+| Commercial economics | Contracts, funding and margins unresolved | Explicit assumed prices, margins, delivery and fee schedules | Explicit scenario inputs; data/commercialization-scenarios.json |
+| Downside | Services-only wind-down case | Separate old-date case plus new margin/cash stresses | Existing coursework; margin and cash-flow tests |
 | Terminal | No established sustainable franchise | Explicit assumed operating exit and zero-exit sensitivity | Avoid unsupported perpetuity; show residual-value uncertainty |
 | AI output | Prior assistance disclosed in supplied report | Accept/modify/reject decisions still await student | The assistant corrected its own draft; no student independent check claimed |
 
 This table compares the preserved student-supplied text. The student should identify
 which changes came from their own work, instruction, peers or AI.
 
-## Consequential AI check
+## Contract correction
 
 The assistant's flat-fee draft failed a primary-source contract check. Reading
 PMA Section 1(c) revealed the escalation floor. The model was modified, its
 original output retained, and an escalation regression added. This demonstrates
 an actual assistant correction; it is not a claim the student independently
-performed the check. Student disposition remains pending.
+performed the check. Personal review of the changes is tracked in assumption-register.md.
 
 ## What changed, and why?
 
@@ -194,4 +194,4 @@ Edition A PDF is outstanding.
 
 The browser workbench now recalculates the engine for each driver edit, supports scenario presets, base reset and a CAPM-rate preset, and separates red input/reconciliation checks from financing feasibility. Invalid inputs suppress the valuation. Control bounds and source limitations are documented in assumption-register.md.
 
-New peer policy and calculations add OKLO/BWXT EV/Sales and P/Book without pooling heterogeneous stages. A proposed 13.03% CAPM WACC, rate monotonicity diagnostics, terminal share of EV and WACC–growth grids supplement the original 15% exit case. Exact outputs are in output/valuation-methods.md. Assumption disposition remains a personal review step; a software change does not assert student approval.
+New peer policy and calculations add OKLO/BWXT EV/Sales and P/Book without pooling heterogeneous stages. A reference 13.03% CAPM WACC, rate monotonicity diagnostics, terminal share of EV and WACC–growth grids supplement the original 15% exit case. Exact outputs are in output/valuation-methods.md. The recommended modeling choices and reasons are consolidated in assumption-register.md.

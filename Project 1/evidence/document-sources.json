@@ -1,23 +1,23 @@
 [
   {
     "source": "docs/decision-memo.md",
-    "source_sha256": "193981c892387b7a0283deb99bc42a5e1341e1dc13cbee0cc9f0ee3d98c104a0",
+    "source_sha256": "a8fac0ffdadc017c57169422e727f529c7983beb2ed5695a74e68b5089bac8d7",
     "pdf": "output/pdf/Decision-Memo.pdf",
-    "pdf_sha256": "287019004d54ae6009eca72efade30b1fb1b280791152fab1f86ea6aa9404415",
+    "pdf_sha256": "7fefc49546b8b90273720ac0266142165d93e4215c91151c24d950de7c5c07c8",
     "repository_copy": "docs/decision-memo.pdf"
   },
   {
     "source": "docs/research-evolution.md",
-    "source_sha256": "0f1e41383228f8f4b840c9a46574ebc3d5861260129740c6c612c634b5d07c7e",
+    "source_sha256": "d109672530d681cf33c6fb6a5b63c49f5be7a5b658547de716b158749b043ea6",
     "pdf": "output/pdf/Research-Evolution.pdf",
-    "pdf_sha256": "4554e8a2025e20e2a4ba65bc86b98f1077c3d96ba961f06c162a7847432c6c75",
+    "pdf_sha256": "f754f2eb25c9149da8fde9df6aeca85c1929110d18553c9e8f61ebffe69cc1aa",
     "repository_copy": "docs/research-evolution.pdf"
   },
   {
     "source": "docs/validation-and-ai-use.md",
-    "source_sha256": "da952a264101f8d3001fac84516e5f70bd5131e180aa0817a463012b9de8e68f",
+    "source_sha256": "13a27567ba21e065b05911d7322ed155059c813b4e9924296fd7e59e11ddfbb5",
     "pdf": "output/pdf/Validation-and-AI-Use.pdf",
-    "pdf_sha256": "b725d1a9857638f29ac9a203440d4055b4e8ac078baf10ea1f2a8279e8fa78bd",
+    "pdf_sha256": "1e4d621524bb37b61feead051f49b72cabe375d8b93e61f66f824926e5922558",
     "repository_copy": "docs/validation-and-ai-use.pdf"
   }
 ]

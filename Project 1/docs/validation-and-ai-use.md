@@ -44,7 +44,7 @@ An unsupported low-growth perpetuity is disabled. Default operating exit value
 is six times positive normalized next-year EBITDA after full milestone fees.
 The multiple is an analyst assumption, not a peer benchmark. Zero/4x/6x/8x/10x
 alternatives are computed. Negative EBITDA receives zero operating sale value,
-not a liquidation appraisal. Quantitative peer validation remains unresolved.
+not a liquidation appraisal. The public-company comparison is in peer-analysis.md; it provides context without validating an exit EBITDA multiple.
 
 ## Validation register
 
@@ -76,7 +76,7 @@ Diagnosis: limited-liability flooring masks a worse underlying equity result.
 The corrected test requires lower unfloored equity, nonincreasing floored value,
 and no reduction in funding. No finance input was tuned to force a passing test.
 
-## Changed-input results - AI-generated, not the locked exercise
+## Additional automated sensitivities
 
 The three five-percentage-point module-margin stresses and the full price/discount
 grid are preserved in output/commercialization-output.json. Stronger execution
@@ -143,6 +143,6 @@ Source ledger and boundary review: docs/verified-starting-point-draft.md; docs/s
 
 ## Live application and method verification
 
-Seven additional tests check known-answer CAPM/capital weights, TTM and peer bridges, live recomputation and reset, invalid API inputs, fee/growth conflicts, terminal percentages, and a negative-cash-flow monotonicity counterexample. Total: 27 passing tests. The original 15% outputs remain reproducible; the proposed CAPM preset is separate. Browser verification is recorded in evidence/workbench-browser-checks.json when completed.
+Seven additional tests check known-answer CAPM/capital weights, TTM and peer bridges, live recomputation and reset, invalid API inputs, fee/growth conflicts, terminal percentages, and a negative-cash-flow monotonicity counterexample. Total: 27 passing tests. The original 15% outputs remain reproducible; the proposed CAPM preset is separate. Browser checks passed for live edits, failed-input checks, reset, the CAPM preset and mobile layout; evidence/workbench-browser-checks.json records the results.
 
-Codex also implemented the workbench and method comparison. Personal acceptance of beta, bounds and forecast choices remains outstanding; see assumption-register.md.
+Codex also implemented the workbench and method comparison. Recommended beta, bounds and forecast choices, with their reasons, are consolidated in assumption-register.md. Personal adoption is recorded only after review.
