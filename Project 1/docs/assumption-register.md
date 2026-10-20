@@ -1,10 +1,10 @@
 # Assumption and control register
 
-Financial judgments belong to the analyst who accepts or changes them. This register separates reported facts, derived observations, proposed choices and remaining personal decisions. It does not record approval that has not occurred. AI assistance is disclosed in validation-and-ai-use.md.
+This register separates reported facts, derived observations and conditional modeling judgments. The participant stated that they reviewed and adopted the recommended choices on October 19, 2026. Adoption does not verify unresolved factual claims. AI assistance is disclosed in validation-and-ai-use.md.
 
 ## Module price
 
-Editable supplier revenue/module: $100–400m; central $200m, delayed $150m, stronger $250m. These are proposed stress choices. No public customer quote supports these endpoints. The upper stress covers the prior central reverse hurdle near $387m/module; the lower stress tests materially lower supplier revenue. The SEC PMA Section 1(g) redacts the negotiated price cap, so the application cannot verify that any selected price is legally/economically attainable. Source: https://www.sec.gov/Archives/edgar/data/1822966/000182296625000144/a101-partnershipmileston.htm. Proposed range and case values require personal acceptance, modification or rejection.
+Editable supplier revenue/module: $100–400m; central $200m, delayed $150m, stronger $250m. These are proposed stress choices. No public customer quote supports these endpoints. The upper stress covers the prior central reverse hurdle near $387m/module; the lower stress tests materially lower supplier revenue. The SEC PMA Section 1(g) redacts the negotiated price cap, so the application cannot verify that any selected price is legally/economically attainable. Source: https://www.sec.gov/Archives/edgar/data/1822966/000182296625000144/a101-partnershipmileston.htm. The range and case values were adopted as conditional scenario choices on October 19, 2026.
 
 ## Module margin
 
@@ -26,9 +26,9 @@ The WACC build, 8–25% stress bounds, and 0–8% growth bounds are explained in
 
 The three selectable delivery paths remain proposed scenarios rather than signed orders. All other common forecast settings in data/commercialization-scenarios.json, including $240m annual cash opex, 2% opex/price growth, service revenue/margins, capex, working capital, taxes, lag burn, cash floor, issue discount/fees and claims allowance are proposed choices. Historical balances, shares, cohort payments, and contractual tranche fractions are sourced/derived in verified-starting-point-draft.md and source-review.md. A single label does not convert these different categories into verified facts.
 
-## Recommended decisions for review
+## Reviewed and adopted modeling decisions
 
-The following choices complete the proposed modeling policy. They are recommendations for adoption, not claims about who originated the analysis or evidence of completed personal review. Keep the underlying facts and limitations even if the choices are adopted.
+On October 19, 2026, the participant stated that they reviewed and adopted the recommended modeling choices below. This records their stated adoption of the scenario policy; it does not change the origin of the analysis or independently verify factual gaps. The underlying facts and limitations remain.
 
 | Decision | Recommended choice | Reason |
 |---|---|---|
@@ -53,4 +53,4 @@ The following choices complete the proposed modeling policy. They are recommenda
 | Monitoring | Review filings and material announcements within five business days | Refresh the thesis when contract, liquidity or financing evidence changes. |
 | Reversal rule | Require verified profitable orders, a fundable stressed plan and supported value 25% above price | Use a clear decision threshold; the 25% hurdle is a policy choice, not company guidance. |
 
-Unverified facts remain unverified: actual contract prices, invoice timing, September share/claim roll-forwards, original exercise timing, and access cannot be settled by choosing an assumption. Personal approval of this recommended policy remains a single review step; no independent-check attestation is supplied here.
+Unverified facts remain unverified: actual contract prices, invoice timing, September share/claim roll-forwards, original exercise timing, and access cannot be settled by choosing an assumption. Personal adoption of the recommended modeling policy is recorded above; no independent-check attestation is supplied here.

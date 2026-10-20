@@ -119,8 +119,7 @@ PDF layout, application interface and rehearsal scripts.
 Assistant disposition: modified the flat-fee proposal after checking the contract;
 withdrew unsupported perpetual terminal credit; qualified every module-price and
 delivery assumption. Primary-source checks and deterministic arithmetic are
-assistant work. Student accept/modify/reject decisions and independent checks are
-still pending and must be recorded truthfully.
+assistant work. The participant stated on October 19, 2026 that they reviewed and adopted the recommended modeling choices in assumption-register.md. Independent checks and original exercise timing/tool-boundary confirmations remain separate.
 
 Inherited Week 5 work is preserved. Its original AI history must be supplied by
 the student. This record does not infer authorship from a test pass, file date,
@@ -145,4 +144,4 @@ Source ledger and boundary review: docs/verified-starting-point-draft.md; docs/s
 
 Seven additional tests check known-answer CAPM/capital weights, TTM and peer bridges, live recomputation and reset, invalid API inputs, fee/growth conflicts, terminal percentages, and a negative-cash-flow monotonicity counterexample. Total: 27 passing tests. The original 15% outputs remain reproducible; the proposed CAPM preset is separate. Browser checks passed for live edits, failed-input checks, reset, the CAPM preset and mobile layout; evidence/workbench-browser-checks.json records the results.
 
-Codex also implemented the workbench and method comparison. Recommended beta, bounds and forecast choices, with their reasons, are consolidated in assumption-register.md. Personal adoption is recorded only after review.
+Codex also implemented the workbench and method comparison. Recommended beta, bounds and forecast choices, with their reasons, are consolidated in assumption-register.md. The participant stated on October 19, 2026 that they reviewed and adopted these choices; unresolved factual checks and assistance attribution remain unchanged.

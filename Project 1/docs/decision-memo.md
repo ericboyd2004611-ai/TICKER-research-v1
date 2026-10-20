@@ -1,6 +1,6 @@
 # NuScale (SMR): watch / defer
 
-**October 19, 2026 | Review copy**
+**October 19, 2026 | Modeling choices reviewed and adopted**
 
 ## Decision and committee ask
 

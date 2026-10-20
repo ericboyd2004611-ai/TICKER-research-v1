@@ -162,7 +162,7 @@ recommendation is inferred from unverified assumptions or omitted residual value
 | Commercial economics | Contracts, funding and margins unresolved | Explicit assumed prices, margins, delivery and fee schedules | Explicit scenario inputs; data/commercialization-scenarios.json |
 | Downside | Services-only wind-down case | Separate old-date case plus new margin/cash stresses | Existing coursework; margin and cash-flow tests |
 | Terminal | No established sustainable franchise | Explicit assumed operating exit and zero-exit sensitivity | Avoid unsupported perpetuity; show residual-value uncertainty |
-| AI output | Prior assistance disclosed in supplied report | Accept/modify/reject decisions still await student | The assistant corrected its own draft; no student independent check claimed |
+| AI output | Prior assistance disclosed in supplied report | Recommended modeling choices reviewed and adopted October 19; independent checks remain separate | The assistant corrected its own draft; no student independent check claimed |
 
 This table compares the preserved student-supplied text. The student should identify
 which changes came from their own work, instruction, peers or AI.
@@ -173,7 +173,7 @@ The assistant's flat-fee draft failed a primary-source contract check. Reading
 PMA Section 1(c) revealed the escalation floor. The model was modified, its
 original output retained, and an escalation regression added. This demonstrates
 an actual assistant correction; it is not a claim the student independently
-performed the check. Personal review of the changes is tracked in assumption-register.md.
+performed the check. Personal review and adoption of the recommended modeling choices were stated on October 19, 2026 and recorded in assumption-register.md.
 
 ## What changed, and why?
 
