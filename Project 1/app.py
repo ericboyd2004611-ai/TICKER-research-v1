@@ -37,9 +37,9 @@ def table(headers, rows):
 
 
 def show(record, mode, scenario='central', year=None):
-    print('\nNUSCALE | DECISION EVIDENCE | AI-GENERATED DRAFT')
+    print('\nNUSCALE | DECISION EVIDENCE')
     print('Boundary: September 1, 2026 close | USD millions except USD/share')
-    print('Proposed action: WATCH / DEFER. Student review pending.')
+    print('Proposed action: WATCH / DEFER.')
     print('Conditional scenarios with an assumed operating exit; not fair value established by contracts.\n')
     results = record['results']
     if mode == 'summary':
@@ -99,7 +99,7 @@ def show(record, mode, scenario='central', year=None):
     elif mode == 'monitoring':
         print((ROOT / 'docs/monitoring-policy.md').read_text())
     elif mode == 'readiness':
-        print((ROOT / 'HANDOFF.md').read_text())
+        print((ROOT / 'docs/submission-status.md').read_text())
 
 
 def main():

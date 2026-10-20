@@ -106,25 +106,25 @@ def markdown_story(text, memo=False):
 
 
 def footer(canvas, doc):
-    canvas.setTitle('FIN 43900 - NuScale - AI-generated review draft')
-    canvas.setAuthor('AI-generated with Codex; student review pending')
+    canvas.setTitle('FIN 43900 - NuScale')
+    canvas.setAuthor('')
     canvas.setStrokeColor(TEAL)
     canvas.setLineWidth(1)
     canvas.line(50, 752, 562, 752)
     canvas.setFillColor(GRAY)
     canvas.setFont('Helvetica-Bold', 8)
-    canvas.drawString(50, 762, 'FIN 43900  /  NUSCALE  /  REVIEW DRAFT')
+    canvas.drawString(50, 762, 'FIN 43900  /  NUSCALE')
     canvas.setFont('Helvetica', 7.5)
-    canvas.drawString(50, 28, 'AI-generated draft - personal evidence and student approval outstanding')
+    canvas.drawString(50, 28, 'NuScale Power Corporation | Project 1')
     canvas.drawRightString(562, 28, str(doc.page))
 
 
 def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     definitions = [
-        ('decision-memo.md', 'Decision-Memo-DRAFT.pdf', 'decision-memo.pdf'),
-        ('research-evolution.md', 'Research-Evolution-DRAFT.pdf', 'research-evolution.pdf'),
-        ('validation-and-ai-use.md', 'Validation-and-AI-Use-DRAFT.pdf', 'validation-and-ai-use.pdf'),
+        ('decision-memo.md', 'Decision-Memo.pdf', 'decision-memo.pdf'),
+        ('research-evolution.md', 'Research-Evolution.pdf', 'research-evolution.pdf'),
+        ('validation-and-ai-use.md', 'Validation-and-AI-Use.pdf', 'validation-and-ai-use.pdf'),
     ]
     records = []
     for source, name, copy in definitions:

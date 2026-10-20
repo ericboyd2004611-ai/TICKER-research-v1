@@ -1,6 +1,6 @@
 # Research evolution
 
-**AI-GENERATED DRAFT | October 19, 2026 | Student review pending**
+**October 19, 2026 | Review copy**
 
 ## Edition A baseline status
 
@@ -187,5 +187,5 @@ establish internal consistency rather than forecast truth.
 Existing NuScale Lab 11 prediction, changed input, results and reconciliation are
 preserved and mapped in docs/lab11-evidence-map.md. Their original timing and tool
 boundary are documentary checks, not an assumption that the exercise was never
-done. Remaining ownership evidence is listed in HANDOFF.md. No separate original
+done. Remaining ownership evidence is listed in docs/submission-status.md. No separate original
 Edition A PDF is outstanding.

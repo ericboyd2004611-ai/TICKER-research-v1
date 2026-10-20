@@ -1,14 +1,13 @@
 # NuScale (SMR): watch / defer
 
-**AI-GENERATED DRAFT | October 19, 2026 | Student review pending**
+**October 19, 2026 | Review copy**
 
 ## Decision and committee ask
 
 Retain SMR on the watchlist; do not initiate a position on this evidence package.
 The intended user is a long-horizon, high-risk-tolerance investment committee with
 no current holding. Request a contract-economics and financing review before any
-purchase decision. This is an AI-generated proposal based on the student's stated
-starting thesis, not an approved recommendation or order to trade.
+purchase decision. This proposal develops the starting watch/defer thesis. Assumptions and remaining validation are documented below.
 
 ## What the application establishes
 

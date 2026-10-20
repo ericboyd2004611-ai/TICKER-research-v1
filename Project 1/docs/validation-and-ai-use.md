@@ -1,6 +1,6 @@
 # Validation and AI use
 
-**AI-GENERATED DRAFT | October 19, 2026 | Student review pending**
+**October 19, 2026 | Review copy**
 
 ## Decision, version and boundary
 
