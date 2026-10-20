@@ -1,0 +1,69 @@
+{
+  "price_date": "2026-09-01",
+  "statement_date": "2026-06-30",
+  "policy": "docs/peer-policy.md",
+  "convention": "Basic dated economic shares, not EPS weighted averages. Conventional EV uses financial debt and excludes operating leases. Adjusted EV separately adds pension/postretirement claims. June balance sheets are proxies, not audited September balances. No pooled median.",
+  "peers": [
+    {
+      "ticker": "OKLO",
+      "role": "Development-stage reactor context; owner/operator economics differ from supplier SMR",
+      "price": 38.53,
+      "shares_m": 185.090155,
+      "cash_and_marketable_m": 3006.289,
+      "financial_debt_m": 0.187,
+      "other_ev_claims_m": 0.0,
+      "book_common_m": 3273.557,
+      "revenue_fy2025_m": 0.0,
+      "revenue_h12025_m": 0.0,
+      "revenue_h12026_m": 1.21,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026054571/oklo-20260630.htm",
+          "locator": "Balance sheet June shares 185,090,155; cash 1644.704 + current marketable 820.454 + noncurrent marketable 541.131; book common 3273.557; Note 5 finance lease 0.187. Note 2 revenue H1 1.210, prior H1 zero. USD millions. Restricted cash excluded. August 4 cover shares 186,017,650 are later and not used for June balance consistency."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1849056/000162828026018698/oklo-20251231.htm",
+          "locator": "2025 consolidated statement of operations: no revenue."
+        },
+        {
+          "url": "https://ca.finance.yahoo.com/quote/OKLO/history/",
+          "locator": "September 1, 2026 close 38.53 USD, unadjusted close. Historical market-data observation; not current quote."
+        }
+      ]
+    },
+    {
+      "ticker": "BWXT",
+      "role": "Mature nuclear equipment context; defense backlog and profitable operations differ from SMR",
+      "price": 161.54,
+      "shares_m": 91.621581,
+      "cash_and_marketable_m": 608.203,
+      "financial_debt_m": 2019.897,
+      "other_ev_claims_m": 147.246,
+      "book_common_m": 1334.45,
+      "revenue_fy2025_m": 3198.425,
+      "revenue_h12025_m": 1446.297,
+      "revenue_h12026_m": 1761.842,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000044/bwxt-20260630.htm",
+          "locator": "Amended June 10-Q, pp 2,4,5: shares issued 129,006,562 minus treasury 37,384,981 = 91,621,581; cash 608.203; debt 2019.897; parent common book 1334.450; H1 sales 1761.842 / 1446.297. Pension 69.344 plus postretirement 77.902 = 147.246 adjusted EV claims. Negative book NCI -0.301 is not a market-valued minority claim; not capitalized. Other investments/affiliates are operating and not subtracted. USD millions."
+        },
+        {
+          "url": "https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-fourth-quarter-and-full-year-2025",
+          "locator": "Full-year 2025 GAAP revenue 3198.425, consolidated statement of income (thousands converted)."
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/bwxt/history/",
+          "locator": "September 1, 2026 close 161.54 USD. Cross-check FT historical prices; issuer historic-prices page did not expose the requested date in static output."
+        }
+      ]
+    }
+  ],
+  "smr_ttm": {
+    "revenue_fy2025_m": 31.479,
+    "revenue_h12025_m": 21.429,
+    "revenue_h12026_m": 0.64,
+    "source": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm",
+    "locator": "June 2026 10-Q statements of operations: H1 2025 revenue 21,429 thousand; H1 2026 640 thousand. 2025 annual revenue 31,479 thousand from annual filing."
+  }
+}

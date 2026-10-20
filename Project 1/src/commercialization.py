@@ -1,4 +1,4 @@
-"""AI-generated scenario FCFF engine. USD millions and shares in millions.
+"""Conditional scenario FCFF engine. USD millions and shares in millions.
 
 Illustrative economics, not sourced module prices. Equity funding is a liquidity
 diagnostic, excluded from FCFF and the valuation denominator to avoid charging
@@ -216,6 +216,7 @@ def run(common, scenario, research):
                     subscription_supported_by_model=modeled_share_pv_at_raise >= funding_price))
     capacity_exceeded = final_shares > c.get('authorized_class_a_shares_m', float('inf'))
     return dict(name=scenario['name'], assumptions=scenario, common=c, rows=rows,
+                reported_debt_m=money['reported_debt'],
                 opening_liquidity=initial_liquidity, gross_award_shares_m=denominator,
                 implied_pma_total_per_module_m=fee, total_explicit_pma_cash=total_fees,
                 terminal_fcff=terminal_fcff, terminal_status=terminal_status,

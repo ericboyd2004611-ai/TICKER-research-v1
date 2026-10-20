@@ -8,9 +8,12 @@ Python 3.10 or later; the core model uses only the standard library. From this f
 
 ```sh
 python3 build_scenarios.py
-python3 app.py --interactive
+python3 build_methods.py
+python3 app.py --serve
 python3 verify_project.py
 ```
+
+Open http://127.0.0.1:8765 for live driver edits, reset, checks, sensitivities and peer context. The command-line views remain available.
 
 Views include summary, scenario, bridge, sensitivity, exit, reverse, sources, monitoring, and readiness. For example: `python3 app.py scenario --scenario central`.
 

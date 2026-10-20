@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-09-01",
+  "risk_free": 0.0475,
+  "equity_risk_premium": 0.0414,
+  "beta": 2.0,
+  "beta_status": "Proposed analyst judgment for development-stage exposure, not a regression estimate or student-approved input. Mature machinery cash-adjusted unlevered beta 0.89 is a reference, not a direct substitute.",
+  "debt_weight": 0.0,
+  "pre_tax_debt_cost": 0.0,
+  "tax_rate": 0.25,
+  "capital_structure": "100% equity / 0% financial debt, consistent with the reported no-debt position. Leases remain in operating costs; no debt tax shield is credited. Future debt financing requires a new build.",
+  "sources": [
+    {"url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm", "locator": "Previous-month September 1, 2026 implied ERP: adjusted payout 4.14%, Treasury rate 4.75%. Same convention used for both inputs; not the October 1 update."},
+    {"url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html", "locator": "January 2026 US Machinery: unlevered beta 0.87, cash-adjusted 0.89. Power 0.31 rejected as a direct mature-utility proxy."},
+    {"url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm", "locator": "Liquidity: no debt; base capital structure does not presume future borrowing."}
+  ]
+}

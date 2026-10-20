@@ -1,0 +1,11 @@
+{
+  "driver_changes_recompute": true,
+  "invalid_input_turns_checks_red": true,
+  "invalid_result_hidden": true,
+  "reset_recovers": true,
+  "perpetuity_conflict_blocked": true,
+  "capm_preset": true,
+  "mobile_no_page_overflow": true,
+  "javascript_errors": [],
+  "note": "Assistant browser QA in isolated headless Chrome; not a student video or firsthand exercise."
+}

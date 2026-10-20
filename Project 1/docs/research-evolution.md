@@ -189,3 +189,9 @@ preserved and mapped in docs/lab11-evidence-map.md. Their original timing and to
 boundary are documentary checks, not an assumption that the exercise was never
 done. Remaining ownership evidence is listed in docs/submission-status.md. No separate original
 Edition A PDF is outstanding.
+
+## Completion of application and method components
+
+The browser workbench now recalculates the engine for each driver edit, supports scenario presets, base reset and a CAPM-rate preset, and separates red input/reconciliation checks from financing feasibility. Invalid inputs suppress the valuation. Control bounds and source limitations are documented in assumption-register.md.
+
+New peer policy and calculations add OKLO/BWXT EV/Sales and P/Book without pooling heterogeneous stages. A proposed 13.03% CAPM WACC, rate monotonicity diagnostics, terminal share of EV and WACC–growth grids supplement the original 15% exit case. Exact outputs are in output/valuation-methods.md. Assumption disposition remains a personal review step; a software change does not assert student approval.

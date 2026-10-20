@@ -62,10 +62,18 @@ to do-not-initiate if a 12-month funding gap has no supportable financing route
 or verified net contract contribution is nonpositive. Withdraw valuation claims
 if sources or ownership cannot reconcile. A cash-model flag is not a default.
 
+## WACC, peer context and terminal dependence
+
+The proposed CAPM build is 4.75% risk-free + 2.0 beta × 4.14% ERP = 13.03% WACC under all-equity financing. Beta 2.0 is a proposed judgment, not a measured beta. The original 15% reference remains separate; stronger-case value is $7.68 at 13.03%, versus $6.77 at 15%.
+
+June-balance/September-price peer observations: OKLO EV/Sales 3,409.44× and P/Book 2.18×; BWXT 4.61× and 11.09×. Mechanical SMR gross-award translations are $87.31/$9.99 from OKLO and $4.42/$50.86 from BWXT. These are not a target range: tiny developer sales distort EV/Sales, while mature profitability and accumulated financing distort P/Book. Policy, sources and bridges are in docs/peer-analysis.md and data/peers.json.
+
+The stronger case's PV terminal value is 176.3% of EV, exposing dependence on the assumed exit. Mixed-sign cash flows cause delayed/central monotonicity failures; these are disclosed. WACC–growth grids block 2–3% perpetuities that conflict with the contractual fee floor. No economically supported perpetual-growth base is claimed.
+
 ## Limits and evidence
 
 The package does not yet verify every intervening filing, reconcile all award and
-contingent-claim terms, establish a quantitative peer valuation, or support a
+contingent-claim terms, or establish a supportable
 market exit. Fixed-price dilution is shown separately and is not deducted
 again from FCFF value; a separate terminal-payoff method values that financing
 condition. Existing NuScale Lab 11 prediction/results are preserved and mapped.

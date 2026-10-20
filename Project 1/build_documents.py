@@ -18,6 +18,7 @@ OUTPUT = ROOT / 'output/pdf'
 NAVY = colors.HexColor('#173146')
 TEAL = colors.HexColor('#14736B')
 GRAY = colors.HexColor('#52616B')
+BODY_SIZE, BODY_LEADING = 9.4, 13.1
 
 
 def ascii_text(text):
@@ -44,8 +45,8 @@ def styles():
     s.add(ParagraphStyle('Section', fontName='Helvetica-Bold', fontSize=12,
                          leading=16, textColor=TEAL, spaceBefore=12, spaceAfter=6,
                          keepWithNext=True))
-    s.add(ParagraphStyle('BodyCopy', fontName='Helvetica', fontSize=9.4,
-                         leading=13.1, textColor=NAVY, spaceAfter=7,
+    s.add(ParagraphStyle('BodyCopy', fontName='Helvetica', fontSize=BODY_SIZE,
+                         leading=BODY_LEADING, textColor=NAVY, spaceAfter=7,
                          splitLongWords=True))
     s.add(ParagraphStyle('Cell', parent=s['BodyCopy'], fontSize=8, leading=10.5, spaceAfter=0))
     s.add(ParagraphStyle('Source', parent=s['BodyCopy'], fontSize=7.5, leading=10))
@@ -120,6 +121,7 @@ def footer(canvas, doc):
 
 
 def main():
+    global BODY_SIZE, BODY_LEADING
     OUTPUT.mkdir(parents=True, exist_ok=True)
     definitions = [
         ('decision-memo.md', 'Decision-Memo.pdf', 'decision-memo.pdf'),
@@ -128,6 +130,7 @@ def main():
     ]
     records = []
     for source, name, copy in definitions:
+        BODY_SIZE, BODY_LEADING = (9.2, 12.6) if source == 'validation-and-ai-use.md' else (9.4, 13.1)
         story = markdown_story((ROOT / 'docs' / source).read_text(), memo=source == 'decision-memo.md')
         if source == 'research-evolution.md':
             story.append(PageBreak())

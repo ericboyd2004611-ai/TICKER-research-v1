@@ -11,8 +11,7 @@ The working record matches the generated draft PDF when rebuilt.
 
 Core environment: Python 3.10+ and standard library. PDF rebuilding uses optional
 packages in requirements-docs.txt. Input and source SHA-256 hashes are embedded
-in output/commercialization-output.json. The package file inventory provides
-file hashes; no Git freeze or LMS receipt is invented.
+in output/commercialization-output.json. The document source record provides file hashes; no LMS receipt is implied.
 
 ## Data and convention ledger
 
@@ -66,7 +65,7 @@ not a liquidation appraisal. Quantitative peer validation remains unresolved.
 | Invalid year is actionable | Require nonzero exit and valid range | PASS | same test file |
 | Old downside invariants | Cash budget, bridge, funding, claims, broken balance | PASS: five checks | tests/test_smr_proforma.py |
 
-Run python3 verify_project.py. Current suite: 20 tests passed. Tests demonstrate
+Run python3 verify_project.py. Current suite: 27 tests passed. Tests demonstrate
 these specific invariants, not the accuracy of commercial forecasts.
 
 ## Failure retained and diagnosed
@@ -141,3 +140,9 @@ No default, legal liability or certain loss is inferred from a model flag.
 PMA: https://www.sec.gov/Archives/edgar/data/1822966/000182296625000144/a101-partnershipmileston.htm
 June 10-Q: https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm
 Source ledger and boundary review: docs/verified-starting-point-draft.md; docs/source-review.md.
+
+## Live application and method verification
+
+Seven additional tests check known-answer CAPM/capital weights, TTM and peer bridges, live recomputation and reset, invalid API inputs, fee/growth conflicts, terminal percentages, and a negative-cash-flow monotonicity counterexample. Total: 27 passing tests. The original 15% outputs remain reproducible; the proposed CAPM preset is separate. Browser verification is recorded in evidence/workbench-browser-checks.json when completed.
+
+Codex also implemented the workbench and method comparison. Personal acceptance of beta, bounds and forecast choices remains outstanding; see assumption-register.md.

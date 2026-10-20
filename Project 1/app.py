@@ -104,12 +104,17 @@ def show(record, mode, scenario='central', year=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--serve', action='store_true', help='Open the live browser workbench server on localhost:8765')
     parser.add_argument('view', nargs='?', default='summary', choices=
                         ['summary', 'scenario', 'bridge', 'sensitivity', 'exit', 'reverse', 'sources', 'monitoring', 'readiness'])
     parser.add_argument('--scenario', default='central', choices=['delayed', 'central', 'stronger'])
     parser.add_argument('--year', type=int)
     parser.add_argument('--interactive', action='store_true', help='Show a terminal menu after the first view')
     args = parser.parse_args()
+    if args.serve:
+        from workbench import serve
+        serve()
+        return 0
     try:
         record = load_record()
         show(record, args.view, args.scenario, args.year)

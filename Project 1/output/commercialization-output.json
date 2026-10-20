@@ -1,5 +1,5 @@
 {
-  "label": "AI-generated illustrative assumptions; not company guidance or student-approved forecasts",
+  "label": "Conditional analyst scenarios; source facts and proposed judgments distinguished in docs/assumption-register.md; not company guidance",
   "research_inputs": {
     "label": "AI-generated research draft; student review pending",
     "valuation_date": "2026-09-01",
@@ -38,10 +38,10 @@
   },
   "input_sha256": {
     "research-inputs.json": "7c8c60886e8e4efea70f844d1437d8f9ac7d5d6398ce1dae2f4b981e781bcf33",
-    "commercialization-scenarios.json": "d64f9915ec31d65219c2f92793589880736caa0409a04d1678685c48f80de324"
+    "commercialization-scenarios.json": "c312e046a4ad23668b743d767bf0dfafe0ff8d80efcc895b9dcf57e40e1331e4"
   },
   "source_sha256": {
-    "src/commercialization.py": "482523fa96abc57a5892241c733cb6d55621a0a3a72cceaec3ec0a1e1fcc32bc",
+    "src/commercialization.py": "9f2bbc86ad8d559199ff0c32ff5a70ae98550e0ea791688ba6acc4ebacc8c4ec",
     "build_scenarios.py": "72ac9d17b041a55e140f0144d9dc4762b0acc7e72c01d3fb520984d5263c5f06"
   },
   "results": [
@@ -500,6 +500,7 @@
           "pv_fcff": -113.79730324765916
         }
       ],
+      "reported_debt_m": 0,
       "opening_liquidity": 1852.997,
       "gross_award_shares_m": 439.138602,
       "implied_pma_total_per_module_m": 45.835,
@@ -1012,6 +1013,7 @@
           "pv_fcff": -92.21832694225255
         }
       ],
+      "reported_debt_m": 0,
       "opening_liquidity": 1852.997,
       "gross_award_shares_m": 439.138602,
       "implied_pma_total_per_module_m": 45.835,
@@ -1530,6 +1532,7 @@
           "pv_fcff": 132.5522252186147
         }
       ],
+      "reported_debt_m": 0,
       "opening_liquidity": 1852.997,
       "gross_award_shares_m": 439.138602,
       "implied_pma_total_per_module_m": 45.835,

@@ -1,0 +1,584 @@
+{
+  "wacc": {
+    "cost_of_equity": 0.1303,
+    "equity_weight": 1.0,
+    "debt_weight": 0.0,
+    "after_tax_debt_cost": 0.0,
+    "wacc": 0.1303
+  },
+  "wacc_inputs": {
+    "as_of": "2026-09-01",
+    "risk_free": 0.0475,
+    "equity_risk_premium": 0.0414,
+    "beta": 2.0,
+    "beta_status": "Proposed analyst judgment for development-stage exposure, not a regression estimate or student-approved input. Mature machinery cash-adjusted unlevered beta 0.89 is a reference, not a direct substitute.",
+    "debt_weight": 0.0,
+    "pre_tax_debt_cost": 0.0,
+    "tax_rate": 0.25,
+    "capital_structure": "100% equity / 0% financial debt, consistent with the reported no-debt position. Leases remain in operating costs; no debt tax shield is credited. Future debt financing requires a new build.",
+    "sources": [
+      {
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "locator": "Previous-month September 1, 2026 implied ERP: adjusted payout 4.14%, Treasury rate 4.75%. Same convention used for both inputs; not the October 1 update."
+      },
+      {
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "locator": "January 2026 US Machinery: unlevered beta 0.87, cash-adjusted 0.89. Power 0.31 rejected as a direct mature-utility proxy."
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm",
+        "locator": "Liquidity: no debt; base capital structure does not presume future borrowing."
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "OKLO",
+      "market_equity_m": 7131.5236721500005,
+      "enterprise_value_m": 4125.42167215,
+      "adjusted_ev_m": 4125.42167215,
+      "ttm_revenue_m": 1.21,
+      "ev_sales": 3409.439398471074,
+      "adjusted_ev_sales": 3409.439398471074,
+      "price_book": 2.1785243611612692,
+      "implied_smr_ev_sales_basic": 89.22449793793103,
+      "implied_smr_price_book_basic": 10.20894835406668,
+      "implied_smr_ev_sales_gross_award": 87.30706887311125,
+      "implied_smr_price_book_gross_award": 9.989558671325636
+    },
+    {
+      "ticker": "BWXT",
+      "market_equity_m": 14800.55019474,
+      "enterprise_value_m": 16212.244194740002,
+      "adjusted_ev_m": 16359.490194740001,
+      "ttm_revenue_m": 3513.9700000000003,
+      "ev_sales": 4.613654696750399,
+      "adjusted_ev_sales": 4.6555577295025286,
+      "price_book": 11.091123829847502,
+      "implied_smr_ev_sales_basic": 4.520153613385379,
+      "implied_smr_price_book_basic": 51.97495717106164,
+      "implied_smr_ev_sales_gross_award": 4.423015785590768,
+      "implied_smr_price_book_gross_award": 50.858018484649705
+    }
+  ],
+  "smr": {
+    "ticker": "SMR",
+    "market_equity_m": 3957.5511834000004,
+    "enterprise_value_m": 2064.5541834000005,
+    "adjusted_ev_m": 2064.5541834000005,
+    "ttm_revenue_m": 10.690000000000001,
+    "ev_sales": 193.12948394761463,
+    "adjusted_ev_sales": 193.12948394761463,
+    "price_book": 1.9653551639628797
+  },
+  "scenarios": [
+    {
+      "name": "Delayed",
+      "reference_rate": 0.15,
+      "reference_value_per_share": 0.0,
+      "capm_value_per_share": 0.0,
+      "terminal": {
+        "pv_terminal_m": 0.0,
+        "enterprise_value_m": -1897.9789531755382,
+        "terminal_share_of_ev": null,
+        "status": "NM: nonpositive EV; percentage would mislead",
+        "note": "A percentage over 100% is possible when explicit PV cash flows are negative."
+      },
+      "monotonicity": {
+        "points": [
+          {
+            "wacc": 0.1,
+            "ev": -2444.0466746068532,
+            "unfloored_equity_m": -591.0496746068532,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.1303,
+            "ev": -2089.929455697973,
+            "unfloored_equity_m": -236.93245569797296,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.15,
+            "ev": -1897.9789531755382,
+            "unfloored_equity_m": -44.98195317553814,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.2,
+            "ev": -1513.135706783695,
+            "unfloored_equity_m": 339.86129321630506,
+            "value_per_share": 0.7739271648369119
+          }
+        ],
+        "floored_value_nonincreasing": false,
+        "ev_nonincreasing": false,
+        "note": "Nonnegative cash flows guarantee decreasing PV. Mixed-sign development cash flows do not. A zero equity floor can hide an EV failure."
+      },
+      "wacc_growth": [
+        {
+          "wacc": 0.1,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        }
+      ]
+    },
+    {
+      "name": "Central illustrative",
+      "reference_rate": 0.15,
+      "reference_value_per_share": 0.0,
+      "capm_value_per_share": 0.0,
+      "terminal": {
+        "pv_terminal_m": 0.0,
+        "enterprise_value_m": -2035.818866468139,
+        "terminal_share_of_ev": null,
+        "status": "NM: nonpositive EV; percentage would mislead",
+        "note": "A percentage over 100% is possible when explicit PV cash flows are negative."
+      },
+      "monotonicity": {
+        "points": [
+          {
+            "wacc": 0.1,
+            "ev": -2558.4003913812517,
+            "unfloored_equity_m": -705.4033913812516,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.1303,
+            "ev": -2220.678865217736,
+            "unfloored_equity_m": -367.681865217736,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.15,
+            "ev": -2035.818866468139,
+            "unfloored_equity_m": -182.82186646813898,
+            "value_per_share": 0.0
+          },
+          {
+            "wacc": 0.2,
+            "ev": -1660.0865480254877,
+            "unfloored_equity_m": 192.9104519745124,
+            "value_per_share": 0.4392928590106328
+          }
+        ],
+        "floored_value_nonincreasing": false,
+        "ev_nonincreasing": false,
+        "note": "Nonnegative cash flows guarantee decreasing PV. Mixed-sign development cash flows do not. A zero equity floor can hide an EV failure."
+      },
+      "wacc_growth": [
+        {
+          "wacc": 0.1,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.05,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.06,
+          "status": "NM: normalized terminal FCFF is nonpositive",
+          "value_per_share": null
+        }
+      ]
+    },
+    {
+      "name": "Stronger execution",
+      "reference_rate": 0.15,
+      "reference_value_per_share": 6.772141626066317,
+      "capm_value_per_share": 7.682747687095533,
+      "terminal": {
+        "pv_terminal_m": 1976.672390789816,
+        "enterprise_value_m": 1120.911806216769,
+        "terminal_share_of_ev": 1.7634504158372248,
+        "status": "DEFINED",
+        "note": "A percentage over 100% is possible when explicit PV cash flows are negative."
+      },
+      "monotonicity": {
+        "points": [
+          {
+            "wacc": 0.1,
+            "ev": 2326.2961825290167,
+            "unfloored_equity_m": 4179.293182529017,
+            "value_per_share": 9.517025293369716
+          },
+          {
+            "wacc": 0.1303,
+            "ev": 1520.7940788298658,
+            "unfloored_equity_m": 3373.791078829866,
+            "value_per_share": 7.682747687095533
+          },
+          {
+            "wacc": 0.15,
+            "ev": 1120.911806216769,
+            "unfloored_equity_m": 2973.9088062167693,
+            "value_per_share": 6.772141626066317
+          },
+          {
+            "wacc": 0.2,
+            "ev": 412.21874093659153,
+            "unfloored_equity_m": 2265.215740936592,
+            "value_per_share": 5.158316145790781
+          }
+        ],
+        "floored_value_nonincreasing": true,
+        "ev_nonincreasing": true,
+        "note": "Nonnegative cash flows guarantee decreasing PV. Mixed-sign development cash flows do not. A zero equity floor can hide an EV failure."
+      },
+      "wacc_growth": [
+        {
+          "wacc": 0.1,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.05,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 14.669933112571819
+        },
+        {
+          "wacc": 0.1,
+          "growth": 0.06,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 17.73949867250537
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.05,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 8.075370274004712
+        },
+        {
+          "wacc": 0.1303,
+          "growth": 0.06,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 8.89666684763503
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.05,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 6.149121797460133
+        },
+        {
+          "wacc": 0.15,
+          "growth": 0.06,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 6.580036199853301
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.02,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.025,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.03,
+          "status": "BLOCKED: growth below contractual fee escalation",
+          "value_per_share": null
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.05,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 3.92419086617445
+        },
+        {
+          "wacc": 0.2,
+          "growth": 0.06,
+          "status": "CONDITIONAL: entire terminal FCFF grows at g; not a base forecast",
+          "value_per_share": 4.043159283325882
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "data/cost-of-capital.json": "b9a865429fb28e5cf822c1e79ecf7b7e305cdda3ffad745b8fd670e01f308c2e",
+    "data/peers.json": "a8ac8137e330205c56c5528b2a4a87ccf0133bcfda88de678e17275e70204242",
+    "data/research-inputs.json": "7c8c60886e8e4efea70f844d1437d8f9ac7d5d6398ce1dae2f4b981e781bcf33",
+    "data/commercialization-scenarios.json": "c312e046a4ad23668b743d767bf0dfafe0ff8d80efcc895b9dcf57e40e1331e4",
+    "src/valuation_methods.py": "bb208ccfcda463476749b0e5bdf53c7aced0201034ec382e57550bff466bc809",
+    "src/commercialization.py": "9f2bbc86ad8d559199ff0c32ff5a70ae98550e0ea791688ba6acc4ebacc8c4ec",
+    "build_methods.py": "1e1429ec94ef05fb771619a4eb3cc2345668146b0745bbe939475eacd8278dc2",
+    "docs/peer-policy.md": "439f2ee99936ccf81f8362957510f23c531f208b986188639c0c0add2d8cdf20"
+  }
+}
