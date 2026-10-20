@@ -1,0 +1,29 @@
+{
+  "decision": "SMR: whether to initiate a position for a committee with no holdings",
+  "as_of": "2026-09-01 close",
+  "recommendation": "WATCH / DEFER - AI-generated proposal, student review pending",
+  "valuation_status": "Conditional valuation with an assumed operating exit; contract prices and exit multiple unverified",
+  "scenario_envelope": [
+    0.0,
+    6.772141626066317
+  ],
+  "reversal_trigger": "Verified profitable binding orders, a fundable stressed cash plan, and supported value at least 25% above price",
+  "evidence_path": "output/commercialization-output.json",
+  "scenario_results": [
+    {
+      "name": "Delayed",
+      "value_per_share": 0.0,
+      "funding_net_m": 2631.7431541645974
+    },
+    {
+      "name": "Central illustrative",
+      "value_per_share": 0.0,
+      "funding_net_m": 2607.963816791664
+    },
+    {
+      "name": "Stronger execution",
+      "value_per_share": 6.772141626066317,
+      "funding_net_m": 42.48094349024228
+    }
+  ]
+}

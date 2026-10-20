@@ -1,0 +1,9 @@
+{
+  "source_sha256_recorded": "c46d64fef740475d0380fbe8826c794a42ba8d748b4730929a065285a1883815",
+  "source_sha256_preserved": "c46d64fef740475d0380fbe8826c794a42ba8d748b4730929a065285a1883815",
+  "match": true,
+  "restored_base_matches_recorded": true,
+  "saved_runs": 8,
+  "all_saved_runs_valid": true,
+  "scope": "Assistant verification of saved evidence identity; does not prove pre-run prediction timing or personal authorship"
+}

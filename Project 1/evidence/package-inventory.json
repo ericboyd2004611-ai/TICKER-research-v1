@@ -1,0 +1,413 @@
+{
+  "label": "AI-generated local review package; course submission incomplete",
+  "created_utc": "2026-10-20T01:01:48.591683+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 52,
+      "sha256": "0dc81720ab040855aa975753a10661b6c404959298a1206d51c37170eacbdd37"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 3360,
+      "sha256": "2ce81c475d397f1915696cfcd0032f1a207a0a6a27c0e419cd77bb1b6d14da22"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7871,
+      "sha256": "dde87e606e1402772592f349145463250872c77a562b68932dc814d56993a415"
+    },
+    {
+      "path": "RECORDING-GUIDE.md",
+      "bytes": 4974,
+      "sha256": "a6c1cc23ce15027bbd1e1c083dc65a63fa7a30552a5e0a3847592f6f5423d214"
+    },
+    {
+      "path": "analysis.py",
+      "bytes": 2144,
+      "sha256": "61f7b7e542ed22f0d68e935c7f43cf70cafc0f85ed50c1024dc881d363103b8d"
+    },
+    {
+      "path": "app.py",
+      "bytes": 7967,
+      "sha256": "b5b97197ddd06b2071d00ce04e3a61a6c0372e653bb375f10a8cf94e6d35bd1b"
+    },
+    {
+      "path": "build_documents.py",
+      "bytes": 7152,
+      "sha256": "6fafb8df6d0dc258192a5d4301e19d5db45204863b836beaf3a18aee11b7329b"
+    },
+    {
+      "path": "build_scenarios.py",
+      "bytes": 17833,
+      "sha256": "72ac9d17b041a55e140f0144d9dc4762b0acc7e72c01d3fb520984d5263c5f06"
+    },
+    {
+      "path": "clean_run.py",
+      "bytes": 2886,
+      "sha256": "58cccfc9e5f3d1302ea7ec847b1599716075245f50edf20ec1b8705b93bd2b33"
+    },
+    {
+      "path": "data/commercialization-scenarios.json",
+      "bytes": 2037,
+      "sha256": "d64f9915ec31d65219c2f92793589880736caa0409a04d1678685c48f80de324"
+    },
+    {
+      "path": "data/research-inputs.json",
+      "bytes": 1393,
+      "sha256": "7c8c60886e8e4efea70f844d1437d8f9ac7d5d6398ce1dae2f4b981e781bcf33"
+    },
+    {
+      "path": "docs/Screenshot 2026-10-19 at 8.19.25\u202fPM.png",
+      "bytes": 122455,
+      "sha256": "6de52b4e84e0693885492ef85364c1e2d8663bc2c26dfddcaf8b3c2d9eacdff4"
+    },
+    {
+      "path": "docs/Screenshot 2026-10-19 at 8.20.22\u202fPM.png",
+      "bytes": 110039,
+      "sha256": "2862ebd73ec9bd71f2fd6edf00bc4224fe0591864497b9a627de55d99f94902c"
+    },
+    {
+      "path": "docs/decision-memo.md",
+      "bytes": 4159,
+      "sha256": "cd689ee3b66b6e3eabf7e294c2c80d41fadfdf7a88f65bb18ef11b9998e7a7e1"
+    },
+    {
+      "path": "docs/decision-memo.pdf",
+      "bytes": 5963,
+      "sha256": "cfac8cb95da2fb1edd2c195f2bc59bc4f50b4f367732d85fb4b97106a8b3e8e2"
+    },
+    {
+      "path": "docs/edition-a-submitted-text.txt",
+      "bytes": 5537,
+      "sha256": "375ea93fc6bb5f69d0f07dfdd406c0d6040e9523e70007bbd6adb275ed34740e"
+    },
+    {
+      "path": "docs/edition-b-working-draft.md",
+      "bytes": 3446,
+      "sha256": "d743447303b1ed784ef9bd2af0f2b57f87032a6e512eb7bc2b3dbb8620e50ae5"
+    },
+    {
+      "path": "docs/existing-model-assumptions.md",
+      "bytes": 10828,
+      "sha256": "86ddb60db4d1a997074f05a9cdffee5a0ac5bbaf5801532caa3f7cf81891205d"
+    },
+    {
+      "path": "docs/lab11-evidence-map.md",
+      "bytes": 1990,
+      "sha256": "2e9412cda30b09e8c0798669baab09de6b42801e58b0b29af64289a9f6b3b174"
+    },
+    {
+      "path": "docs/locked-changed-input-record.md",
+      "bytes": 1398,
+      "sha256": "f5e6cca3d90da707933b3cf157997428699d6324caa3c891ed7f30127da7bbfd"
+    },
+    {
+      "path": "docs/monitoring-policy.md",
+      "bytes": 1780,
+      "sha256": "d3444bef2f393ac364ee9c96edb98ccccadf713edb34e52888fec923d9c35686"
+    },
+    {
+      "path": "docs/project-status.md",
+      "bytes": 3560,
+      "sha256": "4f03d78f76ea3feac0fbd00105f4b9ab82e926847e66bf670e93d55ed96758d7"
+    },
+    {
+      "path": "docs/research-evolution.md",
+      "bytes": 10546,
+      "sha256": "24cdc176cbe00be07037239b07d3995122748131868fd6027c6755d90293af2c"
+    },
+    {
+      "path": "docs/research-evolution.pdf",
+      "bytes": 147367,
+      "sha256": "018a42f36dd4b02f924f18eb6d40f258d3a83505cd641ee4c4bf02d8eab75528"
+    },
+    {
+      "path": "docs/source-review.md",
+      "bytes": 4443,
+      "sha256": "275ff65a94bd2857a4ea98af88e5d3d81ed3405149d8122b6534b78187f227ea"
+    },
+    {
+      "path": "docs/validation-and-ai-use.md",
+      "bytes": 8412,
+      "sha256": "0ef39dfb11ba66a5eb0b5b8d03221efa43a81f2a0afce59bc369e5e9ed2c6177"
+    },
+    {
+      "path": "docs/validation-and-ai-use.pdf",
+      "bytes": 10133,
+      "sha256": "765ce95cf6c67d350cf90b08f32ded8695072441af3b09186a8bfc8585b1fd59"
+    },
+    {
+      "path": "docs/verified-starting-point-draft.md",
+      "bytes": 3222,
+      "sha256": "d225bebd640a7fe52cc7127ed0994961105e93bed66f0b5ece64d84707544ec4"
+    },
+    {
+      "path": "docs/video-1-rehearsal-script.md",
+      "bytes": 1886,
+      "sha256": "a7cb864daa1609a7905a53fa63da4cabbd198b29c417b1570163771d7cb7cfac"
+    },
+    {
+      "path": "docs/video-2-rehearsal-script.md",
+      "bytes": 2233,
+      "sha256": "a317a04e36f5c3f27d5529a67570ffdfeedcaf0560ff42fa4a3ab6c4eed89744"
+    },
+    {
+      "path": "docs/video-3-rehearsal-script.md",
+      "bytes": 1986,
+      "sha256": "f7ecae38e0738965703e6906d5aa8dc42888ef1a5471312fdc210418848e5d93"
+    },
+    {
+      "path": "evidence/clean-run.md",
+      "bytes": 16932,
+      "sha256": "6820dfa2c17d3b616f64123da90063654648d005b50af91c8644fb411e5e4953"
+    },
+    {
+      "path": "evidence/document-sources.json",
+      "bytes": 1002,
+      "sha256": "d478e4bc6086d99c0bfac28f8ce80cbd13992cdf679f45439e6187cc5b859a17"
+    },
+    {
+      "path": "evidence/lab11-smr/Lab11_Base_Inputs.json",
+      "bytes": 2438,
+      "sha256": "fc095cf0652a5faa762ffd3a37b4ba7029f836ee3e14474b2d02b77ae9c4bb29"
+    },
+    {
+      "path": "evidence/lab11-smr/Lab11_Partner2_Response.md",
+      "bytes": 12098,
+      "sha256": "148ace0a9fa28906b3651cf9c276c76fa5f1cebfa92a35e8c7ec34311f903519"
+    },
+    {
+      "path": "evidence/lab11-smr/Lab11_Sensitivity_Results.json",
+      "bytes": 96142,
+      "sha256": "7e2653f0646088e4246c5a3c4298d9b85532e5c7c57c4733bccf6530ed00a82e"
+    },
+    {
+      "path": "evidence/lab11-smr/Lab11_Submission_Summary.md",
+      "bytes": 5709,
+      "sha256": "1e04d0ae4a2be9a1e82bae3319acfcd940cda1ac8d8f9517245f3d36263ee482"
+    },
+    {
+      "path": "evidence/lab11-smr/Lab11_Verification.md",
+      "bytes": 16113,
+      "sha256": "3119e09d7c631bd26818d4474a0c1c6d7a21c7f05724ec4acfac1e8ea2629075"
+    },
+    {
+      "path": "evidence/lab11-smr/SMR_Base_Run_2026-09-29/README.md",
+      "bytes": 589,
+      "sha256": "61274b8a8416d6cb4f4dd9cadbcbab558d98d8a62a49d57de38872836fc09961"
+    },
+    {
+      "path": "evidence/lab11-smr/SMR_Base_Run_2026-09-29/SMR_Base_Inputs.json",
+      "bytes": 2438,
+      "sha256": "fc095cf0652a5faa762ffd3a37b4ba7029f836ee3e14474b2d02b77ae9c4bb29"
+    },
+    {
+      "path": "evidence/lab11-smr/SMR_Base_Run_2026-09-29/SMR_Base_Output.md",
+      "bytes": 37840,
+      "sha256": "e81e2e903f142778d12350afca4fe161cac869048d8594cf1c03cd5285f61430"
+    },
+    {
+      "path": "evidence/lab11-smr/SMR_Base_Run_2026-09-29/lab10_smr_proforma.py",
+      "bytes": 44898,
+      "sha256": "c46d64fef740475d0380fbe8826c794a42ba8d748b4730929a065285a1883815"
+    },
+    {
+      "path": "evidence/lab11-source-integrity.json",
+      "bytes": 435,
+      "sha256": "d152a7e9a47d5ff4b3a2e91cf736d789c3274e75091f08c314f301c7a6bdbc3a"
+    },
+    {
+      "path": "evidence/pdf-checks.json",
+      "bytes": 361,
+      "sha256": "a64d2f5c45c2d63cbcbe4327b3582ed57b187375b62211f15beadfa145d04f61"
+    },
+    {
+      "path": "evidence/pdf-visual-review.md",
+      "bytes": 694,
+      "sha256": "a230a1bbac71969450d612ed96d11304e52bbf519dde41d4ad8c0cd892169f9e"
+    },
+    {
+      "path": "evidence/pre-recording-checks.json",
+      "bytes": 1084,
+      "sha256": "b42c6c33c8d74ad1a1eb24091c436fcc262d99dd916f81d50672a6e203c008fa"
+    },
+    {
+      "path": "evidence/recording-snapshot.json",
+      "bytes": 955,
+      "sha256": "5c26bf649cb63e5fed048d03d190850d0c7c17e2803df7f405f6e3838fc39599"
+    },
+    {
+      "path": "evidence/repository-status.json",
+      "bytes": 344,
+      "sha256": "12e47931bf46679ec85186309f4a6b519a5e7f422e23377c8a1db7e10e614edb"
+    },
+    {
+      "path": "evidence/superseded-first-scenario-draft/commercialization-output.json",
+      "bytes": 53977,
+      "sha256": "7f2089b9c76bfaadb071c757bd040d3265e5890de0e9e2bbf5266a9ea278688b"
+    },
+    {
+      "path": "evidence/superseded-first-scenario-draft/commercialization-report.md",
+      "bytes": 14253,
+      "sha256": "1656e57f52523de0654635e2c2be225f3927154ec0d816c8fdc63a19637e2488"
+    },
+    {
+      "path": "evidence/superseded-first-scenario-draft/commercialization-scenarios.json",
+      "bytes": 1752,
+      "sha256": "301db0053c9409f68d9d25e71ac851503f54d4f8447edf6d648b0e757285c66d"
+    },
+    {
+      "path": "output/commercialization-forecasts.csv",
+      "bytes": 16457,
+      "sha256": "ab26d686471eeb00783950e6510c84cd565b5459d8f9c15f0dfbd769e752a11b"
+    },
+    {
+      "path": "output/commercialization-output.json",
+      "bytes": 62904,
+      "sha256": "17e5f9cf25f87e359d6c1da136a75773f2d545911b7b8f7f150aa44812204514"
+    },
+    {
+      "path": "output/commercialization-report.md",
+      "bytes": 16869,
+      "sha256": "f2abd92bfc6b82b274e2f6dec99c66e553ad99ed341fcb8ea85462bea0d19859"
+    },
+    {
+      "path": "output/downside-output.json",
+      "bytes": 8022,
+      "sha256": "c94f267e8e05092f5e39e875f78b2c933e54054b2fdd304ba9b23a6fffa2f9bc"
+    },
+    {
+      "path": "output/downside-report.md",
+      "bytes": 5057,
+      "sha256": "960cc5a02498dc4fd0bfb2120036ee5611f11fafeba45b523d7ec5190f61aff7"
+    },
+    {
+      "path": "output/pdf/Decision-Memo-DRAFT.pdf",
+      "bytes": 5963,
+      "sha256": "cfac8cb95da2fb1edd2c195f2bc59bc4f50b4f367732d85fb4b97106a8b3e8e2"
+    },
+    {
+      "path": "output/pdf/Research-Evolution-DRAFT.pdf",
+      "bytes": 147367,
+      "sha256": "018a42f36dd4b02f924f18eb6d40f258d3a83505cd641ee4c4bf02d8eab75528"
+    },
+    {
+      "path": "output/pdf/Validation-and-AI-Use-DRAFT.pdf",
+      "bytes": 10133,
+      "sha256": "765ce95cf6c67d350cf90b08f32ded8695072441af3b09186a8bfc8585b1fd59"
+    },
+    {
+      "path": "output/research-bridge.json",
+      "bytes": 2069,
+      "sha256": "46d185260eaae9c56e2a1436ad1aad34f2cb93f09bcc14b8105ec229db6193ae"
+    },
+    {
+      "path": "package_project.py",
+      "bytes": 6816,
+      "sha256": "e51f174082586e704b250fe62058aac2130a83288ef5845cd3452d3ac6af2ad3"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 4603,
+      "sha256": "99f38001eab1c3eaeb848b746268d457362435b22889189c18f721969cea6e53"
+    },
+    {
+      "path": "prepare_drafts.py",
+      "bytes": 25034,
+      "sha256": "c4fcc6888329258ed36d9e24d04a8377c3173f24b422e90130f297f84d0fc368"
+    },
+    {
+      "path": "prepare_recording.py",
+      "bytes": 6612,
+      "sha256": "01c1fcf5ed1d8d4f79452fd0d1cd436280614ffa97abb6a11d46a09619988a5d"
+    },
+    {
+      "path": "qa_documents.py",
+      "bytes": 1881,
+      "sha256": "3d5472819b39c35b8f5e8af1e3268025bba4c7afa29a0d19458a57cbd820dc72"
+    },
+    {
+      "path": "requirements-docs.txt",
+      "bytes": 140,
+      "sha256": "9f2e038f1ad0b124ca960ab998245f345f43751423d6f3fa1c3a9ce0473b5074"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 145,
+      "sha256": "b7d7a54bf358f918170d811ff9bc9d991edcd104d077678c20b2c0da1e90d345"
+    },
+    {
+      "path": "research_bridge.py",
+      "bytes": 2258,
+      "sha256": "1fbcd6ce709f34cbf36614c6e9e4592c5476b995dd90d07dad4bd4b66e6d7ccc"
+    },
+    {
+      "path": "src/commercialization.py",
+      "bytes": 15822,
+      "sha256": "482523fa96abc57a5892241c733cb6d55621a0a3a72cceaec3ec0a1e1fcc32bc"
+    },
+    {
+      "path": "src/smr_proforma.py",
+      "bytes": 12973,
+      "sha256": "4ccd6b8fc772137f2cc32d32dbf4c1267ce310bd9cb9716652969964d276a414"
+    },
+    {
+      "path": "submission/Decision-Memo.pdf",
+      "bytes": 5963,
+      "sha256": "cfac8cb95da2fb1edd2c195f2bc59bc4f50b4f367732d85fb4b97106a8b3e8e2"
+    },
+    {
+      "path": "submission/Research-Evolution.pdf",
+      "bytes": 147367,
+      "sha256": "018a42f36dd4b02f924f18eb6d40f258d3a83505cd641ee4c4bf02d8eab75528"
+    },
+    {
+      "path": "submission/Validation-and-AI-Use.pdf",
+      "bytes": 10133,
+      "sha256": "765ce95cf6c67d350cf90b08f32ded8695072441af3b09186a8bfc8585b1fd59"
+    },
+    {
+      "path": "submission/submission-manifest.csv",
+      "bytes": 2506,
+      "sha256": "c6c6513f4a754053b397aa86fdcded0195484117147361c908304ec61e07da06"
+    },
+    {
+      "path": "submission-manifest.csv",
+      "bytes": 2506,
+      "sha256": "c6c6513f4a754053b397aa86fdcded0195484117147361c908304ec61e07da06"
+    },
+    {
+      "path": "tests/test_application.py",
+      "bytes": 2106,
+      "sha256": "ee8a53998ca5cc26666eb93cb175f19386d04cd5f3f026f759d73e78b75befa1"
+    },
+    {
+      "path": "tests/test_commercialization.py",
+      "bytes": 6997,
+      "sha256": "0d8293895171e997f0ae25f4dae1b7c2df45a0b546b5f442c8dd9cb29203bb91"
+    },
+    {
+      "path": "tests/test_smr_proforma.py",
+      "bytes": 2044,
+      "sha256": "39d43b2b20f8b87e99b19ad13f7a107af6d3bb199f3f174d92d2d3dc1ccd773d"
+    },
+    {
+      "path": "verify_project.py",
+      "bytes": 425,
+      "sha256": "b32b0a62355bca65a37f0d05eeb2ea6cb9c621762353eebd1a12b879efc8eff6"
+    },
+    {
+      "path": "visible_output.json",
+      "bytes": 980,
+      "sha256": "ab22fe5bed7c0ef409ef71f8df3d55e28e6e379e8b28c8d789edd834642db522"
+    }
+  ],
+  "unresolved": [
+    "Original Lab 11 timing/tool-boundary evidence verification",
+    "Student source and AI review",
+    "Recordings and actual transcripts",
+    "Verified repository/video access and freeze",
+    "Supported full fair-value analysis"
+  ]
+}

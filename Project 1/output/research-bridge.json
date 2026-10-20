@@ -1,0 +1,48 @@
+{
+  "label": "AI-generated research draft; student review pending",
+  "inputs": {
+    "label": "AI-generated research draft; student review pending",
+    "valuation_date": "2026-09-01",
+    "valuation_time": "NYSE regular-session close; after Edition A lab timestamp",
+    "balance_sheet_date": "2026-06-30",
+    "share_measurement_date": "2026-06-30",
+    "later_cover_share_date": "2026-07-30",
+    "filing_url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm",
+    "price_url": "https://stockanalysis.com/stocks/smr/history/",
+    "price_crosscheck_url": "https://ca.finance.yahoo.com/quote/SMR/history/",
+    "usd_millions": {
+      "cash": 766.46,
+      "short_term_investments": 305.688,
+      "investments": 820.849,
+      "restricted_cash_cfpp": 5.1,
+      "restricted_cash_houston": 4.463,
+      "reported_debt": 0,
+      "total_liabilities": 35.536,
+      "disclosed_commitments": 168.383,
+      "pma_payable": 0,
+      "total_assets": 2049.193,
+      "ppe": 3.323,
+      "consolidated_equity": 2013.657,
+      "first_half_operating_cash_flow": -372.86,
+      "first_half_pma_settlement": 259.884
+    },
+    "shares": {
+      "class_a": 410367790,
+      "exchangeable_llc_units": 19333750,
+      "options": 4496162,
+      "rsus": 4940900,
+      "later_cover_class_a": 410389522
+    },
+    "price_usd": 9.21,
+    "status": "June balances and July cover shares are reported observations, not September balances. Intervening disclosures and full ownership/claims audit remain outstanding."
+  },
+  "reported_unrestricted_cash_and_investments_m": 1892.997,
+  "economic_shares_before_awards": 429701540,
+  "gross_award_share_proxy": 439138602,
+  "june_class_a_market_cap_proxy_m": 3779.4873459000005,
+  "june_if_converted_market_value_proxy_m": 3957.5511834000004,
+  "gross_award_market_value_proxy_m": 4044.4665244200005,
+  "cash_adjusted_if_converted_market_value_proxy_m": 2064.5541834000005,
+  "h1_cash_use_excluding_identified_pma_settlement_m": 112.976,
+  "status": "DIAGNOSTIC_ONLY_NOT_ENTERPRISE_VALUE_OR_FAIR_VALUE"
+}

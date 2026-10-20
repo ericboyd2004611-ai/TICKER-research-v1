@@ -1,0 +1,2 @@
+# Core analysis and terminal application: Python standard library only.
+# Python >=3.10. No API keys, accounts or package installation required.

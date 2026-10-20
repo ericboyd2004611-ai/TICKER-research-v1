@@ -1,0 +1,61 @@
+{
+  "label": "AI-generated illustrative assumptions; not company guidance or student-approved forecasts",
+  "common": {
+    "valuation_date": "2026-09-01",
+    "first_forecast_year": 2027,
+    "last_forecast_year": 2036,
+    "assumed_july_august_cash_use_m": 40.0,
+    "annual_cash_opex_m": 240.0,
+    "opex_growth": 0.02,
+    "annual_existing_services_revenue_m": 5.0,
+    "existing_services_margin": 0.35,
+    "installed_module_annual_service_revenue_m": 2.0,
+    "installed_services_margin": 0.50,
+    "capex_fraction_revenue": 0.03,
+    "minimum_annual_capex_m": 2.0,
+    "opening_ppe_m": 3.323,
+    "depreciation_fraction_opening_ppe": 0.20,
+    "incremental_nwc_fraction_revenue": 0.10,
+    "cash_tax_rate": 0.25,
+    "discount_rate": 0.15,
+    "terminal_growth": 0.025,
+    "terminal_method": "exit_multiple",
+    "exit_ebitda_multiple": 6.0,
+    "authorized_class_a_shares_m": 662.0,
+    "minimum_cash_m": 50.0,
+    "funding_issue_price_fraction_market": 0.70,
+    "equity_issuance_fee": 0.03,
+    "additional_equity_claims_m": 0.0,
+    "historical_pma_first_tranche_m": 507.393,
+    "historical_pma_cash_paid_2025_m": 247.509,
+    "historical_pma_fraction_paid_2025": 0.50,
+    "pma_annual_escalation": 0.05,
+    "module_price_annual_growth": 0.02,
+    "historical_pma_cohort_modules": 72,
+    "pma_first_tranche_fraction": 0.15,
+    "pma_binding_fraction": 0.35,
+    "pma_purchase_fraction": 0.50,
+    "pma_binding_lead_years": 2,
+    "pma_purchase_lead_years": 1
+  },
+  "scenarios": [
+    {
+      "name": "Delayed",
+      "module_price_m": 150.0,
+      "module_gross_margin_before_pma": 0.30,
+      "deliveries": [0, 0, 0, 0, 0, 0, 6, 6, 12, 12]
+    },
+    {
+      "name": "Central illustrative",
+      "module_price_m": 200.0,
+      "module_gross_margin_before_pma": 0.35,
+      "deliveries": [0, 0, 0, 6, 6, 12, 12, 18, 18, 24]
+    },
+    {
+      "name": "Stronger execution",
+      "module_price_m": 250.0,
+      "module_gross_margin_before_pma": 0.40,
+      "deliveries": [0, 0, 6, 12, 18, 24, 24, 30, 30, 36]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "label": "AI-generated research draft; student review pending",
+  "valuation_date": "2026-09-01",
+  "valuation_time": "NYSE regular-session close; after Edition A lab timestamp",
+  "balance_sheet_date": "2026-06-30",
+  "share_measurement_date": "2026-06-30",
+  "later_cover_share_date": "2026-07-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000085/smr-20260630.htm",
+  "price_url": "https://stockanalysis.com/stocks/smr/history/",
+  "price_crosscheck_url": "https://ca.finance.yahoo.com/quote/SMR/history/",
+  "usd_millions": {
+    "cash": 766.460,
+    "short_term_investments": 305.688,
+    "investments": 820.849,
+    "restricted_cash_cfpp": 5.100,
+    "restricted_cash_houston": 4.463,
+    "reported_debt": 0,
+    "total_liabilities": 35.536,
+    "disclosed_commitments": 168.383,
+    "pma_payable": 0,
+    "total_assets": 2049.193,
+    "ppe": 3.323,
+    "consolidated_equity": 2013.657,
+    "first_half_operating_cash_flow": -372.860,
+    "first_half_pma_settlement": 259.884
+  },
+  "shares": {
+    "class_a": 410367790,
+    "exchangeable_llc_units": 19333750,
+    "options": 4496162,
+    "rsus": 4940900,
+    "later_cover_class_a": 410389522
+  },
+  "price_usd": 9.21,
+  "status": "June balances and July cover shares are reported observations, not September balances. Intervening disclosures and full ownership/claims audit remain outstanding."
+}

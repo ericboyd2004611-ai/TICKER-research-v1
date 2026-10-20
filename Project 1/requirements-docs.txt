@@ -1,0 +1,5 @@
+# Optional document rebuild environment only; not needed to run the application.
+reportlab==5.0.1
+pypdf==6.21.1
+PyMuPDF==2.0
+Pillow==13.0.0

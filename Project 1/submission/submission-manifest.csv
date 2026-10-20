@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research-Evolution.pdf,yes,output/pdf/Research-Evolution-DRAFT.pdf,Edition A text plus research evolution review draft,2026-09-01 close,,local file only; external access not checked,sha256:018a42f36dd4b02f924f18eb6d40f258d3a83505cd641ee4c4bf02d8eab75528,Edition A text included; student reports professor-approved text format. Edition B remains AI-generated and pending review
+Repository,yes,https://github.com/ericboyd2004611-ai/TICKER-research-v1/tree/project-1-smr-submission/Project%201,NuScale Project 1 - separate submission branch,,,,,Prepared isolated branch; publication verification pending
+Visible executed output,yes,output/commercialization-report.md,Executed conditional valuation and financing evidence,2026-09-01 close,,local file only; external access not checked,sha256:f2abd92bfc6b82b274e2f6dec99c66e553ad99ed341fcb8ea85462bea0d19859,Local output exists; operating exit is an explicit assumption with sensitivity
+Decision memo or deck,yes,output/pdf/Decision-Memo-DRAFT.pdf,Watch/defer decision memo - review draft,2026-09-01 close,,local file only; external access not checked,sha256:cfac8cb95da2fb1edd2c195f2bc59bc4f50b4f367732d85fb4b97106a8b3e8e2,AI-generated proposal; student approval and independent checks pending
+Validation-and-AI-Use.pdf,yes,output/pdf/Validation-and-AI-Use-DRAFT.pdf,Validation and AI use - review draft,2026-09-01 close,,local file only; external access not checked,sha256:765ce95cf6c67d350cf90b08f32ded8695072441af3b09186a8bfc8585b1fd59,Existing NuScale Lab 11 prediction/results included; original timing and tool boundary need verification; student dispositions pending
+Video 1,yes,,,,,,,MISSING actual recording/URL/duration/index. Rehearsal only: docs/video-1-rehearsal-script.md
+Transcript Video 1,yes,,,,,,,MISSING corrected transcript of actual recording; a rehearsal script is not a transcript
+Video 2,yes,,,,,,,MISSING actual recording/URL/duration/index. Rehearsal only: docs/video-2-rehearsal-script.md
+Transcript Video 2,yes,,,,,,,MISSING corrected transcript of actual recording; a rehearsal script is not a transcript
+Video 3,yes,,,,,,,MISSING actual recording/URL/duration/index. Rehearsal only: docs/video-3-rehearsal-script.md
+Transcript Video 3,yes,,,,,,,MISSING corrected transcript of actual recording; a rehearsal script is not a transcript
+Optional deployed output,no,,,,,,,Not required; no deployment performed
