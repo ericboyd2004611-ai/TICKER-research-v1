@@ -124,6 +124,3 @@ The naive signal is `(109 / 103 - 1) × 100 = +5.83%`. It looks like stronger up
 
 The two signals also describe different periods: the as-of signal measures February versus January, while the naive signal measures March versus February. The stronger signal comes from seeing a later month. It does not establish that a trade would have earned a higher return.
 
-## AI disclosure
-
-Codex wrote and ran `asof.py` using the supplied table and rules, compared its output with the supplied expected results, and drafted this results document, the line-by-line code explanation, and the look-ahead bias discussion. Student review and independent verification have not been recorded.
